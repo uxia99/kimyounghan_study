@@ -2,26 +2,26 @@ package array;
 
 import java.util.Scanner;
 
-public class ProductAdminQuiz {
+public class ProductAdmin {
 
     public static void main(String[] args) {
-        int maxProduct = 3;
-        String[] productNames = new String[maxProduct];
-        int[] productPrices = new int[maxProduct];
-        int productCount = 0;
+        int maxProducts = 3; // 상품 등록은 10개까지만
+        String[] productNames = new String[maxProducts];
+        int[] productPrices = new int[maxProducts];
+        int productCount = 0; // 현재 등록된 상품의 개수를 저장할 변수
 
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
+
             System.out.print("\n1.상품등록 | 2.상품목록 | 3.종료\n메뉴를 선택하시오 : ");
             int menu = scanner.nextInt();
-            scanner.nextLine(); // 입력 버퍼 클리어 (?)
+            scanner.nextLine();
 
             if (menu == 1) {
-                if (productCount < maxProduct) {
+                if (productCount < maxProducts) {
                     System.out.print("상품명을 입력하시오 : ");
                     productNames[productCount] = scanner.nextLine();
-
 
                     System.out.print("상품 가격을 입력하시오 : ");
                     productPrices[productCount] = scanner.nextInt();
@@ -44,7 +44,7 @@ public class ProductAdminQuiz {
             }
 
             if (menu == 3) {
-                System.out.println("프로그램을 종료합니다.");
+                System.out.println("\n프로그램을 종료합니다.");
                 break;
             }
         }
