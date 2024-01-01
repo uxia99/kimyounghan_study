@@ -23,7 +23,7 @@ public class ArrayQuiz4 {
         System.out.println();
 
         System.out.print("입력한 정수의 합계 : ");
-        int average = sum / 5;
+        double average = (double) sum / 5;
         System.out.print(average);
         System.out.println();
     }
