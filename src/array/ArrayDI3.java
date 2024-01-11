@@ -9,8 +9,8 @@ public class ArrayDI3 {
         };
 
         // 0행 출력
-        for (int row = 0; row < 2; row++) {
-            for (int column = 0; column < 3; column++) {
+        for (int row = 0; row < arr.length; row++) {
+            for (int column = 0; column < arr[row].length; column++) {
                 System.out.print(arr[row][column] + " ");
             }
             System.out.println();
