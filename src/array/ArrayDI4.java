@@ -3,7 +3,7 @@ package array;
 public class ArrayDI4 {
     public static void main(String[] args) {
         // 3 X 3 2차원 배열
-        int[][] arr = new int[3][3];
+        int[][] arr = new int[3][5];
 
         int i = 1;
         for (int row = 0; row < arr.length; row++) {
