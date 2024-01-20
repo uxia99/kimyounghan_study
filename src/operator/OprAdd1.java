@@ -16,5 +16,8 @@ public class OprAdd1 {
 
         ++a;
         System.out.println("a = " + a); // 4
+
+        --a;
+        System.out.println("a = " + a); // 3
     }
 }
