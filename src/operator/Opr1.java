@@ -25,5 +25,7 @@ public class Opr1 {
         // 나머지
         int mod = a % b;
         System.out.println("a % b = " + mod);
+
+        // int z = 10 / 0;
     }
 }
