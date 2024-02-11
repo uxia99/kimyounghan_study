@@ -8,5 +8,8 @@ public class Casting2 {
         // intValue = doubleValue; // 컴파일 오류 발생
         intValue = (int) doubleValue; // 명시적 형변환
         System.out.println(intValue); // 1
+
+        int z = (int) 10.5;
+        System.out.println(z); // 10
     }
 }
